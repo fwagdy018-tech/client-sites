@@ -48,5 +48,5 @@ Egyptian Arabic; reply in Egyptian Arabic, short and practical.
 | Houston Car Salon | `houston-car-salon/` | Preview live on GitHub Pages; works from Egypt |
 | All in the Details Auto Salon (Central Texas, mobile) | `all-in-the-details-auto-salon/` | Preview on GitHub Pages (Nov 2026). Source + build tools on owner's PC in `khan-auto-detailing-website-v2/all-in-the-details-auto-salon/` — rebuild there, then copy `dist/` here. |
 | Recharged Mobile Detailing LLC (Amarillo TX, mobile) | `recharged-mobile-detailing/` | Preview on GitHub Pages (Nov 2026). Source + build tools on owner's PC in `khan-auto-detailing-website-v2/recharged-mobile-detailing/`; rebuild there, then copy `dist/` here. Mobile Lighthouse perf 92–99. |
-| Khan Auto Detailing | — | Was on Netlify; files on owner's PC, ZIP not sent yet |
-| Bridestein (confirm spelling) | — | Was on Netlify; ZIP not sent yet |
+| Khan Auto Detailing (Houston, mobile) | `khan-auto-detailing/` | Moved from Netlify to GitHub Pages (Nov 2026). Source + build tools on owner's PC in `khan-auto-detailing-website-v2/khan-auto-detailing/`; rebuild there, then copy `dist/` here. |
+| Predestined Mobile Detailing (Houston) | `predestined-mobile-detailing/` | Moved from Netlify to GitHub Pages (Nov 2026). Source + build tools on owner's PC in `khan-auto-detailing-website-v2/predestined-mobile-detailing/`; rebuild there, then copy `dist/` here. |

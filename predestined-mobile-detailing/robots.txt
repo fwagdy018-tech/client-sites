@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fwagdy018-tech.github.io/client-sites/predestined-mobile-detailing/sitemap.xml
