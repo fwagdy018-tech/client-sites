@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fwagdy018-tech.github.io/client-sites/simple-shine-mobile-detailing/sitemap.xml
