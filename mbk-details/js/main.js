@@ -21,8 +21,11 @@ W.addEventListener('resize',onScroll);onScroll();
 /* mobile nav */
 var bg=$('.burger'),nav=$('#nav');
 if(bg&&nav){
-  var close=function(){nav.classList.remove('on');bg.setAttribute('aria-expanded','false');D.body.style.overflow=''};
-  bg.addEventListener('click',function(){var o=nav.classList.toggle('on');bg.setAttribute('aria-expanded',o);D.body.style.overflow=o?'hidden':''});
+  var scrim=D.createElement('div');scrim.className='scrim';D.body.appendChild(scrim);
+  var xb=D.createElement('button');xb.type='button';xb.className='nclose';xb.setAttribute('aria-label','Close menu');xb.innerHTML='&times;';nav.appendChild(xb);
+  var close=function(){nav.classList.remove('on');scrim.classList.remove('on');bg.setAttribute('aria-expanded','false');D.body.style.overflow=''};
+  bg.addEventListener('click',function(){var o=!nav.classList.contains('on');if(o){nav.classList.add('on');scrim.classList.add('on');bg.setAttribute('aria-expanded','true');D.body.style.overflow='hidden'}else close()});
+  scrim.addEventListener('click',close);xb.addEventListener('click',close);
   $$('a',nav).forEach(function(a){a.addEventListener('click',close)});
   D.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
 }
