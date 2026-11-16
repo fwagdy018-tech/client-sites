@@ -137,7 +137,7 @@ if(f){
   var P=f.dataset.phone,FS=f.dataset.formspree,out=$('.fmsg',f);
   function msg(){
     var g=function(n){return(f.elements[n]&&f.elements[n].value||'').trim()};
-    var s='Hi AEN Details,I\'d like a quote.\nName: '+g('name')+'\nPhone: '+g('phone')+'\nVehicle: '+g('vehicle')+'\nService: '+g('service')+'\nArea / ZIP: '+g('area');
+    var s='Hi Lance, I\'d like a quote.\nName: '+g('name')+'\nPhone: '+g('phone')+'\nVehicle: '+g('vehicle')+'\nService: '+g('service')+'\nArea / ZIP: '+g('area');
     if(g('notes'))s+='\nNotes: '+g('notes');return s;
   }
   function bad(el,m){el.setAttribute('aria-invalid','true');var e=el.parentNode.querySelector('.err');if(!e){e=D.createElement('span');e.className='err';e.setAttribute('role','alert');el.parentNode.appendChild(e)}e.textContent=m}
@@ -156,7 +156,7 @@ if(f){
     if(FS){
       var btn=$('button[type=submit]',f);btn.disabled=true;btn.firstChild.textContent='Sending… ';
       fetch(FS,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)}).then(function(r){
-        if(!r.ok)throw 0;out.innerHTML='<strong>Request sent.</strong> This is a quote request, not a confirmed appointment. AEN Details will contact you to confirm details and availability.';out.classList.add('on');f.reset();
+        if(!r.ok)throw 0;out.innerHTML='<strong>Request sent.</strong> This is a quote request, not a confirmed appointment. Lance Quillin Window Tinting will contact you to confirm details and availability.';out.classList.add('on');f.reset();
       }).catch(function(){out.innerHTML='<strong>We couldn\'t send that online.</strong> Please text or call <a href="tel:'+P+'">'+P+'</a>.';out.classList.add('on')}).finally(function(){btn.disabled=false;btn.firstChild.textContent='Request a free quote '});
       return;
     }
