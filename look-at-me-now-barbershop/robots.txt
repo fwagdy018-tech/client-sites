@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fwagdy018-tech.github.io/client-sites/look-at-me-now-barbershop/sitemap.xml
